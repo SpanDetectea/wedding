@@ -1,0 +1,38 @@
+.header {
+    background-image: url("../../assets/images/wedding.jpg");
+    background-position-y: 25%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    &__menu {
+        height: 80px;
+        background-color: #FFFFFF;
+    }
+    &__timer {
+        position: relative;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        top: 97vh;
+        max-width: 40%;
+        border-radius: 15px;
+        margin: 0 auto;
+        @media screen and (max-width: 640px) {
+            max-width: 100%;
+        }
+        &__element {
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid black;
+            margin: 0 5px;
+            padding: 2%;
+            &__number {
+                text-align: center;
+                font-size: 1.9em;
+            }
+        }
+    }
+}

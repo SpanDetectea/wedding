@@ -1,0 +1,31 @@
+.calendar {
+    position: relative;
+    margin:100px 0;
+    &__image {
+        width: 640px;
+        @media screen and (max-width: 640px) {
+            width: 320px;
+        }
+    }
+    &__heart {
+        position: absolute;
+        right: 21%;
+        bottom: 31%;
+        animation: pulse 2.5s linear infinite;
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.7);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.7);
+        opacity: 0.5;
+    }
+}
+
