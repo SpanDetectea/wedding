@@ -1,28 +1,45 @@
 .header {
     background-image: url("../../assets/images/wedding4.jpg");
+    border: 80px solid #FFFFFF;
     background-position-y: 25%;
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     position: relative;
-
+    background-clip: content-box;
+    @media screen and (max-width: 640px) {
+        border: 10px solid #FFFFFF;
+    }
+    // &__background {
+    //     text-align: center;
+    //     margin-top: 50px;
+    //     &__image {
+    //         height: 500px;
+    //         border-radius: 15px;
+    //     }
+    // }
     &__menu {
         height: 80px;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
     }
     &__timer {
         position: relative;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         display: flex;
         justify-content: center;
         top: 97vh;
         max-width: 40%;
         border-radius: 15px;
         margin: 0 auto;
+        @media screen and (max-width: 870px) {
+            max-width: 60%;
+        }
         @media screen and (max-width: 640px) {
             max-width: 100%;
+            border-radius: 0;
         }
+
         &__element {
             display: flex;
             flex-direction: column;
