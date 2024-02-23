@@ -1,12 +1,12 @@
-import './Calendar.scss'
-import srcCalendar from "../../assets/images/calendar.png";
-import srcHeart from '../../assets/images/cardiogram.png';
+import "./Calendar.scss";
+import calendar from "../../assets/images/calendar2.png";
 
 const Calendar = () => {
-    return <div className='calendar'>
-        <img src={srcCalendar} alt="" className='calendar__image'/>
-        <img src={srcHeart} alt="" className='calendar__heart'/>
+  return (
+    <div className="calendar">
+      <img src={calendar} alt="" className="calendar__image" />
     </div>
-}
+  );
+};
 
 export default Calendar;
