@@ -22,7 +22,7 @@ const event = [
   {
     image: wedding,
     desc: "Окончание вечера",
-    time: "22:00",
+    time: "23:00",
   },
 ];
 const DayEvent = () => {

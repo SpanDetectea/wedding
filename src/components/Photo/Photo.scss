@@ -7,6 +7,9 @@
         width: 64px;
         animation: smallPulse 1.5s linear infinite;
     }
+    p {
+        text-align: center;
+    }
 }
 @keyframes smallPulse {
     0% {

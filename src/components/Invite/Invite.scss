@@ -2,4 +2,10 @@
     margin: 100px auto;
     border-radius: 15% 15% 0 0;
     text-align: center;
+    &__names {
+        font-family: "Philosopher", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        color: #5e9085;
+    }
 }
