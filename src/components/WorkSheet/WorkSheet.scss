@@ -8,21 +8,21 @@
         width: 70%;
         margin: 30px auto;
         &__name {
-            // width: 40%;
+            width: 60%;
             // font-size: 2em;
             border-radius: 30px;
             padding: 7px;
             // outline: none;
             border: 1px solid #000;            
             // margin: 0 auto;
-            margin: 15px 0;
+            margin: 15px auto;
             &::placeholder {
                 text-align: center;
             }
         } 
         &__button {
             margin: 15px 0;
-            width: 40%;
+            width: 50%;
             align-self: center;
             background-color: #5e9085;
             // border: 1px solid #000;

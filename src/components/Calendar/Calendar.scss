@@ -1,18 +1,8 @@
-// .calendar {
-//     position: relative;
-//     margin:100px 0;
-//     &__image {
-//         width: 640px;
-//         @media screen and (max-width: 640px) {
-//             width: 320px;
-//         }
-//     }
-// }
 .container {
     display: grid;
     font-size: 2em;
-    width: 60%;
-    margin: 0 auto;
+    // width: 60%;
+    // margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -33,10 +23,9 @@
 }
 .time {
     grid-area: time;
-    width: 120px;
     justify-self: center; 
     align-self: center; 
-    // text-align: ;
+    text-align: center;
 }
 .number {
     grid-area: number;
@@ -46,23 +35,24 @@
 }
 .dayOfWeek {
     grid-area: dayOfWeek;
-    width: 120px;
     justify-self: center; 
     align-self: center; 
 }
 .stripes {
     position: relative;
+    width: 120px;
     &::before {
         content: "";
         position: absolute;
         width: 100%;
-        border: 1px solid #5e9085;
+        border: 2px solid #5e9085;
+        left: 0;
     }
     &::after {
         content: "";
         position: absolute;
         width: 100%;
-        border: 1px solid #5e9085;
+        border: 2px solid #5e9085;
         top:100%;
         left:0;
     }

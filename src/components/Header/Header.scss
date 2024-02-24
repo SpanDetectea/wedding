@@ -19,6 +19,7 @@
     //         border-radius: 15px;
     //     }
     // }
+    
     &__menu {
         height: 80px;
         background-color: #ffffff;
@@ -32,6 +33,7 @@
         max-width: 40%;
         border-radius: 15px;
         margin: 0 auto;
+        
         @media screen and (max-width: 870px) {
             max-width: 60%;
         }

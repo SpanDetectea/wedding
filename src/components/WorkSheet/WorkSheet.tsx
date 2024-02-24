@@ -52,7 +52,7 @@ const WorkSheet = () => {
           <label htmlFor="drink">Безалкогольные напитки</label>
         </div>
         <button type="submit" disabled={state.submitting} className="workSheet__form__button">
-          Submit
+          Отправить
         </button>
       </form>
     </div>
