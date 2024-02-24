@@ -2,8 +2,52 @@
     margin: 100px 0;
     text-align: center;
     &__form {
-        margin: 30px 0;
+        // margin: 30px 0;
         display: flex;
         flex-direction: column;
+        width: 70%;
+        margin: 30px auto;
+        &__name {
+            // width: 40%;
+            // font-size: 2em;
+            border-radius: 30px;
+            padding: 7px;
+            // outline: none;
+            border: 1px solid #000;            
+            // margin: 0 auto;
+            margin: 15px 0;
+            &::placeholder {
+                text-align: center;
+            }
+        } 
+        &__button {
+            margin: 15px 0;
+            width: 40%;
+            align-self: center;
+            background-color: #5e9085;
+            // border: 1px solid #000;
+            border: 0;
+            color: #fff;
+            font-size: 1.2em;                        
+            border-radius: 30px;
+            &:active {
+                transform: scale(0.95, 0.95);
+            }
+        }
+        &__choice {
+            align-self: self-start;
+            // float: left;
+        }
+        &__heading {
+            margin: 15px 0;
+            font-weight: 500;
+        }
     }
+}
+.answer {
+    text-align: center;
+    margin: 100px 0;
+    color: #5e9085;
+    font-weight: 500;
+    font-size: 2em;
 }
