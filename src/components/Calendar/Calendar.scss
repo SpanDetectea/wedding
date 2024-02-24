@@ -1,10 +1,69 @@
-.calendar {
+// .calendar {
+//     position: relative;
+//     margin:100px 0;
+//     &__image {
+//         width: 640px;
+//         @media screen and (max-width: 640px) {
+//             width: 320px;
+//         }
+//     }
+// }
+.container {
+    display: grid;
+    font-size: 2em;
+    width: 60%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Month Month Month"
+        "dayOfWeek number time"
+        "year year year";
+}
+.Month {
+    grid-area: Month;
+    justify-self: center; 
+    align-self: center; 
+}
+.year {
+    grid-area: year;
+    justify-self: center; 
+    align-self: center; 
+}
+.time {
+    grid-area: time;
+    width: 120px;
+    justify-self: center; 
+    align-self: center; 
+    // text-align: ;
+}
+.number {
+    grid-area: number;
+    justify-self: center; 
+    align-self: center; 
+    font-size: 2em;
+}
+.dayOfWeek {
+    grid-area: dayOfWeek;
+    width: 120px;
+    justify-self: center; 
+    align-self: center; 
+}
+.stripes {
     position: relative;
-    margin:100px 0;
-    &__image {
-        width: 640px;
-        @media screen and (max-width: 640px) {
-            width: 320px;
-        }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        border: 1px solid #5e9085;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        border: 1px solid #5e9085;
+        top:100%;
+        left:0;
     }
 }
