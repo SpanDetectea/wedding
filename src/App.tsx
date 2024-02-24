@@ -8,7 +8,6 @@ import Invite from "./components/Invite/Invite";
 import Location from "./components/Location/Location";
 import Photo from "./components/Photo/Photo";
 import Plane from "./components/Plane/Plane";
-import Wishes from "./components/Wishes/Wishes";
 import WorkSheet from "./components/WorkSheet/WorkSheet";
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
         <Plane />
         <Location />
         <DressCode />
-        {/* <Wishes /> */}
         <Details />
         <WorkSheet />
         <Contacs />

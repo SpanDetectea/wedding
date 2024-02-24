@@ -25,8 +25,6 @@ const Contacs = () => {
           <img src={bride} alt="" className="contacs__wrapper__info__image" />
         </div>
       </div>
-      {/* <div className="contacs__groom">Жених: +79114274286</div>
-        <div>Невеста: +79114274286</div> */}
       <div></div>
     </div>
   );

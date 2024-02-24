@@ -13,7 +13,6 @@ const Details = () => {
         свой авто на ночь.
       </div>
       <div className="details__info">В связи с местом проведения банкета  советуем вам надеть удобную и комфортную обувь</div>
-      <div className="details__info"></div>
     </div>
   );
 };
