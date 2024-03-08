@@ -23,6 +23,7 @@
         &__button {
             margin: 15px 0;
             width: 50%;
+            padding: 5px;
             align-self: center;
             background-color: #5e9085;
             // border: 1px solid #000;
@@ -33,10 +34,17 @@
             &:active {
                 transform: scale(0.95, 0.95);
             }
+            @media screen and (max-width: 420px) {
+                width: 60%;
+            }
         }
         &__choice {
             align-self: self-start;
             // float: left;
+            text-wrap: nowrap;
+            & input {
+                margin: 10px;
+            }
         }
         &__heading {
             margin: 15px 0;

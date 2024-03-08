@@ -1,7 +1,14 @@
 .App_wrapper {
     width: 640px;
     margin: 0 auto;
-    @media screen and (max-width:640px) {
-        width: 320px;   
+    @media screen and (max-width: 640px) {
+        width: 320px;
     }
+    // font-family: "Bad Script", cursive;
+    // font-weight: 600;
+    // font-style: normal;
+    font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }

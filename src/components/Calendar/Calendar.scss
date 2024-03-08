@@ -1,8 +1,6 @@
 .container {
     display: grid;
     font-size: 2em;
-    // width: 60%;
-    // margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -40,10 +38,12 @@
 }
 .stripes {
     position: relative;
-    width: 120px;
+    // width: 120px;
+    text-align: center;
+    width: 100%;
     @media screen and (max-width: 640px) {
-        width:100px;
-        font-size: 0.8em;
+        // width:100px;
+        font-size: 0.7em;
     }
     &::before {
         content: "";
@@ -51,7 +51,7 @@
         width: 100%;
         border: 2px solid #5e9085;
         left: 0;
-        top: -5px;
+        top: -10px;
     }
     &::after {
         content: "";

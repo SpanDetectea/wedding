@@ -36,12 +36,8 @@ const WorkSheet = () => {
         </div>
         <label className="workSheet__form__heading">Что планируете пить?</label>
         <div className="workSheet__form__choice">
-          <input type="checkbox" name="Напитки" value="Вино_красное" />
-          <label htmlFor="drink">Вино красное</label>
-        </div>
-        <div className="workSheet__form__choice">
-          <input type="checkbox" name="Напитки" value="Вино_белое" />
-          <label htmlFor="drink">Вино белое</label>
+          <input type="checkbox" name="Напитки" value="Вино" />
+          <label htmlFor="drink">Вино</label>
         </div>
         <div className="workSheet__form__choice">
           <input type="checkbox" name="Напитки" value="Шампанское" />
