@@ -2,34 +2,29 @@
     margin: 100px 0;
     text-align: center;
     &__form {
-        // margin: 30px 0;
         display: flex;
         flex-direction: column;
         width: 70%;
         margin: 30px auto;
         &__name {
             width: 60%;
-            // font-size: 2em;
             border-radius: 30px;
             padding: 7px;
-            // outline: none;
-            border: 1px solid #000;            
-            // margin: 0 auto;
+            border: 1px solid #000;
             margin: 15px auto;
             &::placeholder {
                 text-align: center;
             }
-        } 
+        }
         &__button {
             margin: 15px 0;
             width: 50%;
             padding: 5px;
             align-self: center;
             background-color: #5e9085;
-            // border: 1px solid #000;
             border: 0;
             color: #fff;
-            font-size: 1.2em;                        
+            font-size: 1.2em;
             border-radius: 30px;
             &:active {
                 transform: scale(0.95, 0.95);
@@ -40,7 +35,6 @@
         }
         &__choice {
             align-self: self-start;
-            // float: left;
             text-wrap: nowrap;
             & input {
                 margin: 10px;
@@ -53,9 +47,29 @@
     }
 }
 .answer {
+    position: relative;
+    width: 640px;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 15px;
     text-align: center;
-    margin: 100px 0;
+    z-index: 1;
     color: #5e9085;
     font-weight: 500;
     font-size: 2em;
+    @media screen and (max-width: 640px) {
+        position: fixed;
+        display: block;
+        margin: 0;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+        padding-top: 45vh;
+    }
 }

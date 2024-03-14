@@ -1,5 +1,4 @@
 import "./Calendar.scss";
-import calendar from "../../assets/images/calendar2.png";
 
 const Calendar = () => {
   return (

@@ -11,15 +11,6 @@
     @media screen and (max-width: 640px) {
         border: 10px solid #FFFFFF;
     }
-    // &__background {
-    //     text-align: center;
-    //     margin-top: 50px;
-    //     &__image {
-    //         height: 500px;
-    //         border-radius: 15px;
-    //     }
-    // }
-    
     &__menu {
         height: 80px;
         background-color: #ffffff;
@@ -45,7 +36,6 @@
         &__element {
             display: flex;
             flex-direction: column;
-            // border: 1px solid black;
             margin: 0 5px;
             padding: 2%;
             &__number {

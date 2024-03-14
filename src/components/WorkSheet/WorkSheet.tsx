@@ -1,10 +1,33 @@
-import { ValidationError, useForm } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import "./WorkSheet.scss";
+import { useEffect, useState } from "react";
+import heart from '../../assets/images/running_heart.gif';
 
 const WorkSheet = () => {
-  const [state, handleSubmit] = useForm("xzbngzvy");
-  if (state.succeeded) {
-    // if (1) {
+  const [state, handleSubmit, reset] = useForm("xzbngzvy");
+  // const [state, handleSubmit, reset] = useForm("xgegyvzb");
+  const [modal, setModal] = useState(false);
+
+  useEffect(() => {
+    let timerId = setTimeout(() => {
+      setModal(false);
+      reset();
+    }, 2000);
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [state.succeeded]);
+
+  const thanksModal = () => {
+    setModal(true);
+  };
+
+  if (state.submitting) {
+    return <div className="answer">
+      <img src={heart} alt="" />
+    </div>
+  }
+  if (state.succeeded && modal) {
     return <div className="answer">Благодарим за ваш ответ!</div>;
   }
   return (
@@ -59,6 +82,7 @@ const WorkSheet = () => {
           type="submit"
           disabled={state.submitting}
           className="workSheet__form__button"
+          onClick={thanksModal}
         >
           Отправить
         </button>
