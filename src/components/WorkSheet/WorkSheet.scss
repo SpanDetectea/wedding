@@ -34,9 +34,11 @@
             }
         }
         &__choice {
-            align-self: self-start;
+            // align-self: self-start;
             text-wrap: nowrap;
-            -webkit-flex-wrap: nowrap;
+            // -webkit-text-wrap: nowrap;
+            display: flex;
+            align-items: center;
             & input {
                 margin: 10px;
             }
