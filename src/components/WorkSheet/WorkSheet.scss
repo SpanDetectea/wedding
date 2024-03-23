@@ -1,6 +1,4 @@
 .workSheet {
-    -webkit-text-size-adjust: none;
-    -webkit-appearance: none;
     margin: 100px 0;
     text-align: center;
     &__form {
@@ -38,6 +36,7 @@
         &__choice {
             align-self: self-start;
             text-wrap: nowrap;
+            -webkit-flex-wrap: nowrap;
             & input {
                 margin: 10px;
             }
