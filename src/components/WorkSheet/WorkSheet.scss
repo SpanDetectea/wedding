@@ -34,17 +34,15 @@
             }
         }
         &__choice {
-            // align-self: self-start;
-            // text-wrap: nowrap;
-            // -webkit-text-wrap: nowrap;
             display: flex;
             align-items: center;
+            
             & input {
                 margin: 10px;
                 float: left;
             } 
             & label {
-            text-wrap: nowrap;
+                text-align: left;
             }
         }
         &__heading {
