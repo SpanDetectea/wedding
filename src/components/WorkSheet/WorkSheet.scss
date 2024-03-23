@@ -35,15 +35,16 @@
         }
         &__choice {
             // align-self: self-start;
-            text-wrap: nowrap;
+            // text-wrap: nowrap;
             // -webkit-text-wrap: nowrap;
             display: flex;
             align-items: center;
             & input {
                 margin: 10px;
-            }
+                float: left;
+            } 
             & label {
-                padding-right: 100%;
+            text-wrap: nowrap;
             }
         }
         &__heading {
